@@ -40,13 +40,6 @@ execute() {
 
 log "-----------dev-env-----------"
 
-# macOS compatibility: Set XDG_CONFIG_HOME to default if not already set
-# XDG Base Directory specification defaults to ~/.config
-# This is needed because macOS doesn't set this environment variable by default
-if [[ -z "$XDG_CONFIG_HOME" ]]; then
-    XDG_CONFIG_HOME="$HOME/.config"
-    log "XDG_CONFIG_HOME not set, defaulting to: $XDG_CONFIG_HOME"
-fi
 
 # Change to the script's directory to work with relative paths
 cd $script_dir
@@ -78,8 +71,7 @@ copy_dir() {
     popd > /dev/null
 }
 
-# Copy all directories from .config to XDG_CONFIG_HOME (user's config directory)
-copy_dir .config $XDG_CONFIG_HOME
+copy_dir configs ~
 
 
 # Function to copy a single file to a destination directory
