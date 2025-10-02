@@ -89,3 +89,5 @@ copy_file() {
 
 # Copy .specialrc file to the home directory (~)
 copy_file configs/.zshrc ~
+copy_file configs/.yabairc ~
+copy_file configs/.skhdrc ~
