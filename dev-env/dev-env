@@ -88,4 +88,4 @@ copy_file() {
 }
 
 # Copy .specialrc file to the home directory (~)
-copy_file .specialrc ~
+copy_file configs/.zshrc ~
