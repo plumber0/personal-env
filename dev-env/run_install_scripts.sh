@@ -25,7 +25,7 @@ cd $script_dir
 # -perm +111 = files with execute permission for someone
 # -mindepth 1 = don't include ./runs itself
 # -maxdepth 1 = only search one level deep (don't recurse into subdirectories)
-scripts=$(find ./runs -type f -perm +111 -mindepth 1 -maxdepth 1)
+scripts=$(find ./install_scripts -type f -perm +111 -mindepth 1 -maxdepth 1)
 
 # Parse command-line arguments
 # [[ ]] = test command for conditionals (more modern than [ ])
@@ -91,5 +91,5 @@ for script in $scripts; do
     log "running script: $script"
     # Execute the script using our execute function
     # ./ = current directory prefix
-    execute ./$script
+    execute $script
 done
