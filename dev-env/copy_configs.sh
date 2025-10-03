@@ -91,3 +91,4 @@ copy_file() {
 copy_file configs/.zshrc ~
 copy_file configs/.yabairc ~
 copy_file configs/.skhdrc ~
+copy_file configs/.tmux.conf ~
