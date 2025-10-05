@@ -1,5 +1,9 @@
 # Morphology
 
+## Learning objective
+
+In which, we learn about the internal life of words.
+
 ## Key Terminology
 
 - **Type**: An entry in a vocabulary (or a lexicon)
