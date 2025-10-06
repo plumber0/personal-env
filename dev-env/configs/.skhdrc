@@ -8,14 +8,14 @@ f5 : open -a ChatGPT
 f8 : open -a Discord
 f9 : open -a Notion
 
-# Media Controls
+# Media Controls (using native Objective-C scripts based on Hammerspoon implementation)
 
-# F10: Play/Pause
-f10 : tell application "System Events" to key code 100
+# F10: Play/Pause (works with any media player)
+f10 : ~/bin/media_play_pause
 # F11: Volume Down
-f11 : osascript -e "set volume output volume ((output volume of (get volume settings)) - 10)"
+f11 : ~/bin/media_volume_down
 # F12: Volume Up
-f12 : osascript -e "set volume output volume ((output volume of (get volume settings)) + 10)"
+f12 : ~/bin/media_volume_up
 
 alt + shift - f : yabai -m window --toggle native-fullscreen
 
