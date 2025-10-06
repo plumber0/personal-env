@@ -1,0 +1,7 @@
+# Compiled binaries are installed to ~/bin (not tracked in git)
+# Source .m files in scripts/ are tracked
+# Ignore any compiled binaries in scripts/ directory
+scripts/media_play_pause
+scripts/media_volume_up
+scripts/media_volume_down
+
