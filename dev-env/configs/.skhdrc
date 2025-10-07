@@ -3,8 +3,8 @@
 f1 : open -a Terminal
 f2 : open -a Cursor
 f3 : open -a "Google Chrome"
-f4 : open -a DataGrip
-f5 : open -a ChatGPT
+f4 : open -a ChatGPT
+f5 : open -a Preview
 f8 : open -a Discord
 f9 : open -a Notion
 
