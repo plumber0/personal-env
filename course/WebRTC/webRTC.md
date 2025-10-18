@@ -19,23 +19,35 @@
 - A & B also exchange their supported media and security
 
 
+<img src="./images/00.png" alt="WebRTC Overview" width="500"/>
+
+<img src="./images/01.png" alt="WebRTC Overview" width="500"/>
+
+
 ### WebRTC Demystified
 
 ### NAT (Network Address Translation)
-- if you are behind the NAT (don't have public IP address)
+- Router = The physical device that connects your home network to the internet
+- NAT = A specific job/function that the router does (address translation)
+
+- if you are behind the Router (don't have public IP address)
 
 - 4 types of NATs:
   - One to One NAT (Full-cone NAT)
-    - packets to external IP:port on the router always maps to internal IP:port without exception
+    - packets to external IP:port on the router always maps to internal IP:port without exception  
+    <img src="./images/03.png" alt="WebRTC Overview" width="500"/>
   - Address restricted NAT
-    - packets to external IP:port on the router always maps to internal IP:port as long as source address from packet matches the table (regardless of source port)
+    - packets to external IP:port on the router always maps to internal IP:port as long as source address from packet matches the table (regardless of source port)  
+    <img src="./images/04.png" alt="WebRTC Overview" width="500"/>
   - Port restricted NAT
     - packets to external IP:port on the router always maps to internal IP:port as long as source address and port from packet matches the table
-    - allow if we communicated with this host:port before
+    - allow if we communicated with this host:port before  
+    <img src="./images/05.png" alt="WebRTC Overview" width="500"/>
   - Symmetric NAT
     - not fit for WebRTC
     - Packets to external IP:port on the router always maps to internal IP:port as long as source address and port from packet matches the table
-    - Only allow if the full pair match
+    - Only allow if the full pair match  
+    <img src="./images/06.png" alt="WebRTC Overview" width="500"/>
 
 
 ### STUN (Session Traversal Utilities for NAT)
@@ -43,13 +55,17 @@
 - Works for Full-cone, Port/Address restricted NAT
 - Doesn't work for Symmetric NAT
 - STUN server port 3478, 5349 for TLS
-- Cheap to maintain
+- Cheap to maintain  
+<img src="./images/07.png" alt="WebRTC Overview" width="500"/>
+
+<img src="./images/08.png" alt="WebRTC Overview" width="500"/>
 
 ### TURN (Traversal Using Relays around NAT)
 - In case of Symmetric NAT we use TURN
 - It's just a server that relays packets
 - TURN default server port 3478, 5349 for TLS
-- Expensive to maintain and run
+- Expensive to maintain and run  
+<img src="./images/09.png" alt="WebRTC Overview" width="500"/>
 
 ### ICE (Interactive Connectivity Establishment)
 - ICE collects all available candidates (local IP addresses (what if we are in the same network?), reflexive addresses - STUN ones, relayed addresses - TURN ones)
