@@ -6,11 +6,11 @@
 <img src="./images/03.png" alt="End to End Architecture" width="500"/>
 
 - TCP
-  - if packet are lost, TCP will retransmit them, agent continue to wait
+  - if packets are lost, TCP will retransmit them, agent continues to wait
   - large amount of packets are sent and received at the same time, so even if little bit of packets are lost, it has to wait for the retransmit to complete
 
 - UDP
-  - if packet are lost, UDP will not retransmit them, agent will not wait for the retransmit to complete
+  - if packets are lost, UDP will not retransmit them, agent will not wait for the retransmit to complete
   - less overhead, faster than TCP
   - not reliable, but good for live streaming
 
@@ -61,12 +61,12 @@
 - Agent Turn Detection (TD)
   - heuristic way to detect when user is speaking and when agent can speak
   - VAD : is user actually speaking? by energy level of the audio
-  - Semantic turn deteection : what user actually saying? by transcript of the audio  
+  - Semantic turn detection : what user actually saying? by transcript of the audio  
   <img src="./images/09.png" alt="Voice AI Agent Architecture" width="500"/>
 
 Not only for the turn detection for user speaking, but also for the turn detection for agent speaking  
 
-whille agent is speaking and detect user is speaking and take it a interruption than all the inference at that time will be interrupted and flushed.  
+while agent is speaking and detects user is speaking and takes it as an interruption then all the inference at that time will be interrupted and flushed.  
 
 <img src="./images/10.png" alt="Voice AI Agent Architecture" width="500"/>
 

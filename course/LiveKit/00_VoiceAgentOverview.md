@@ -1,5 +1,5 @@
-## What is an Voice Agent?
-- Voice Agents combine speech and reasoning abilities of foundation modles to deliver real-time, human-like voice interactions.
+## What is a Voice Agent?
+- Voice Agents combine speech and reasoning abilities of foundation models to deliver real-time, human-like voice interactions.
 
 - 2 options:
   - Speech-to-Speech (aka `Real Time`) Model
@@ -11,7 +11,7 @@
     <img src="./images/01.png" alt="Voice Agent Overview" width="500"/>
 
   - Every system has tradeoffs, need to make a decision at some point between Latency, Quality, and cost.
-  - The advantage of the a pipeline approach is that you can make different tradeoffs for differnt parts of the system based on what's most imporant
+  - The advantage of the a pipeline approach is that you can make different tradeoffs for different parts of the system based on what's most important
 
 - Pipeline detail
   - Voice Activity Detection (VAD)
@@ -33,7 +33,7 @@
 <img src="./images/02.png" alt="Voice Agent Overview" width="500"/>
 
 - Latency Optimization
-  - Non trival to estimate in practice
+  - Non-trivial to estimate in practice
   - In Voice Agents using the STT + LLM + TTS architecture, the LLM is often the primary source of latency.
     - if self hosting, use smaller/quantized model.
     - shorten the reply or construct the reply in segments(interstitial or a short acknowledgement before the full reply is given)
