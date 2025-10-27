@@ -19,9 +19,9 @@ f12 : ~/bin/media_volume_up
 
 alt + shift - f : yabai -m window --toggle native-fullscreen
 
-shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
-shift + alt - right   : yabai -m window --grid 1:2:1:1:0:0
-shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
+shift + ctrl - left   : yabai -m window --grid 1:2:0:0:1:1
+shift + ctrl - right   : yabai -m window --grid 1:2:1:1:0:0
+shift + ctrl - up     : yabai -m window --grid 1:1:0:0:1:1
 
 # alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
