@@ -30,3 +30,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 alias k=kubectl
 complete -F __start_kubectl k
 source <(kubectl completion zsh)
+
+export KUBECONFIG=$HOME/.kube/config-staging
