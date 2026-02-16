@@ -1,9 +1,9 @@
 # Application Shortcuts
 
 f1 : open -a Terminal
-f2 : open -a Cursor
+f2 : open -a "Visual Studio Code"
 f3 : open -a "Google Chrome"
-f4 : open -a "Google Gemini"
+f4 : open -a "ChatGPT"
 f5 : open -a Preview
 f8 : open -a Excalidraw
 f9 : open -a Notion

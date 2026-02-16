@@ -17,6 +17,7 @@ unset __conda_setup
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
