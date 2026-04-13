@@ -32,8 +32,21 @@ return {
     opts = {
       picker = {
         sources = {
+          files = {
+            hidden = true,
+            ignored = true,
+          },
+          grep = {
+            hidden = true,
+            ignored = true,
+          },
+          grep_word = {
+            hidden = true,
+            ignored = true,
+          },
           explorer = {
             hidden = true,
+            ignored = true,
           },
         },
       },
