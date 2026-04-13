@@ -4,3 +4,4 @@
 --
 -- Add any additional options here.
 vim.o.background = "light"
+vim.g.autoformat = false
