@@ -1,12 +1,14 @@
 # Application Shortcuts
 
 f1 : open -a Ghostty
-f2 : open -a "Simulator"
-f3 : open -a "Google Chrome"
-f4 : open -a "Codex"
-f5 : open -a ChatGPT
-f8 : open -a Obsidian
+f2 : open -a "Visual Studio Code"
+f3 : open -a Codex
+f4 : open -a "Google Chrome"
+f6 : open -a Figma
+f7 : open -a DataGrip
+f8 : open -a "Discord"
 f9 : open -a Notion
+f10 : open -a Obsidian
 
 # Media Controls (using native Objective-C scripts based on Hammerspoon implementation)
 
