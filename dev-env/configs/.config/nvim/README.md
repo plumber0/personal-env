@@ -13,6 +13,14 @@ Notes:
 - `lazy-lock.json` should stay in git.
 - `lazyvim.json` is tracked here because it is currently part of my copied setup, but it is mostly LazyVim state.
 
+## Python LSP
+
+- Managed in `lua/plugins/python.lua`
+- Uses `pylsp` for Python language features and `ruff` for linting/code actions
+- Mason will ensure `python-lsp-server` and `ruff` are installed when Neovim starts
+- Open Python files from a project root such as a repo with `.git` or a Python project with `pyproject.toml`
+- Verify inside Neovim with `:LspInfo`; in a Python project you should see both `pylsp` and `ruff`
+
 ## Daily Process
 
 ### 1. Change config
